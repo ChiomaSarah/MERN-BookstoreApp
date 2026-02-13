@@ -21,7 +21,7 @@ function Books() {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://mongodb-bookstore-api.cyclic.app/books",
+          "https://bookstore-api-mongodb.onrender.com/books",
 
           {
             method: "GET",
@@ -30,7 +30,7 @@ function Books() {
               "Content-Type": "application/json",
               Authorization: `Bearer ${token}`,
             },
-          }
+          },
         );
         const result = await response.json();
         setLoading(false);

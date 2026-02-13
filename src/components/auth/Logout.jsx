@@ -3,11 +3,11 @@ import React from "react";
 const Logout = ({ setToken }) => {
   try {
     const response = fetch(
-      "https://mongodb-bookstore-api.cyclic.app/auth/logout",
+      "https://bookstore-api-mongodb.onrender.com/auth/logout",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-      }
+      },
     );
     // console.log(response);
     setToken(response);

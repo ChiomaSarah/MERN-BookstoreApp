@@ -19,13 +19,13 @@ const Signup = ({ setToken }) => {
       };
 
       const response = await fetch(
-        "https://mongodb-bookstore-api.cyclic.app/auth/signup",
+        "https://bookstore-api-mongodb.onrender.com/auth/signup",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
 
           body: JSON.stringify(body),
-        }
+        },
       );
       const result = await response.json();
       // console.log(result);

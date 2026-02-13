@@ -37,7 +37,7 @@ function AddBook() {
       };
 
       const response = await fetch(
-        "https://mongodb-bookstore-api.cyclic.app/books",
+        "https://bookstore-api-mongodb.onrender.com/books",
         {
           method: "POST",
           headers: {
@@ -46,7 +46,7 @@ function AddBook() {
             Authorization: `Bearer ${token}`,
           },
           body: JSON.stringify(body),
-        }
+        },
       );
       const result = await response.json();
       if (response.ok) {

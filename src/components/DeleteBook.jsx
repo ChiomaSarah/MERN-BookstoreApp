@@ -8,7 +8,7 @@ function DeleteBook({ book }) {
 
   async function deleteBook(id) {
     try {
-      await fetch(`https://mongodb-bookstore-api.cyclic.app/books/${id}`, {
+      await fetch(`https://bookstore-api-mongodb.onrender.com/books/${id}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json, text/plain, */*",
@@ -38,7 +38,7 @@ function DeleteBook({ book }) {
         style={{ backgroundColor: "#CC0000", color: "#fff" }}
         onClick={() => {
           const confirm = window.confirm(
-            "Are you sure you want to delete this record?\n\nThis action cannot be undone."
+            "Are you sure you want to delete this record?\n\nThis action cannot be undone.",
           );
           if (confirm === true) {
             deleteBook(book._id);
