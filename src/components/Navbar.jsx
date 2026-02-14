@@ -31,6 +31,7 @@ function Navbar() {
             <Link
               to="/"
               className="nav-link"
+              id="navbar-list"
               onClick={closeMenu}
               style={{ fontSize: "18px" }}
             >
@@ -43,6 +44,7 @@ function Navbar() {
               <Link
                 to="/books"
                 className="nav-link"
+                id="navbar-list"
                 onClick={closeMenu}
                 style={{ fontSize: "18px" }}
               >
@@ -54,6 +56,7 @@ function Navbar() {
               <Link
                 to="/auth/login"
                 className="nav-link"
+                id="navbar-list"
                 onClick={closeMenu}
                 style={{ fontSize: "18px" }}
               >
@@ -67,6 +70,7 @@ function Navbar() {
               <Link
                 to="/auth/signup"
                 className="nav-link"
+                id="navbar-list"
                 onClick={closeMenu}
                 style={{ fontSize: "18px" }}
               >
@@ -80,6 +84,7 @@ function Navbar() {
               <Link
                 to="/auth/logout"
                 className="nav-link"
+                id="navbar-list"
                 onClick={() => {
                   closeMenu();
                   window.location.reload();
